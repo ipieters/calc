@@ -17,7 +17,7 @@ It is an assignment for SENG 513 Web Based System at the University of Calgary.
 ## Install
 
 ```sh
-After cloning run the following commands in your console/terminal: npm install. 
+After cloning run the following commands on your console/terminal: npm install
 
 This is to fix any missing node modules and dependencies
 ```
