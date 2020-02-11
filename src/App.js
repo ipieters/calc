@@ -15,7 +15,7 @@ class App extends Component {
 
   addToInput = val => {
     if (val === 'x') val = '*';
-    if (this.state.input === "ERROR") this.setState({ input: "" + val });
+    if ((this.state.input === "ERROR") || (this.state.input === "Infinity")) this.setState({ input: "" + val });
     else {
       this.setState({ input: this.state.input + val });
     }
@@ -23,9 +23,11 @@ class App extends Component {
 
   handleEqual = () => {
     try {
-      var mathVar = math.evaluate(this.state.input);
-      if (!isNaN(mathVar) || math != "Infinity")
+      const mathVar = math.evaluate(this.state.input).toString();
+      if (!isNaN(mathVar))
         this.setState({ input: mathVar });
+      else
+        throw "ERROR".toString();  
     }
     catch (err) {
       this.setState({ input: "ERROR" });
