@@ -27,7 +27,7 @@ class App extends Component {
       if (!isNaN(mathVar))
         this.setState({ input: mathVar });
       else
-        throw "ERROR".toString();  
+        throw "ERROR".toString();
     }
     catch (err) {
       this.setState({ input: "ERROR" });
@@ -55,9 +55,9 @@ class App extends Component {
             <Button handleClick={this.addToInput}>)</Button>
           </div>
           <div className="row">
-            <Button handleClick={this.addToInput}>1</Button>
-            <Button handleClick={this.addToInput}>2</Button>
-            <Button handleClick={this.addToInput}>3</Button>
+            <Button handleClick={this.addToInput}>7</Button>
+            <Button handleClick={this.addToInput}>8</Button>
+            <Button handleClick={this.addToInput}>9</Button>
             <Button handleClick={this.addToInput}>+</Button>
           </div>
           <div className="row">
@@ -67,9 +67,10 @@ class App extends Component {
             <Button handleClick={this.addToInput}>-</Button>
           </div>
           <div className="row">
-            <Button handleClick={this.addToInput}>7</Button>
-            <Button handleClick={this.addToInput}>8</Button>
-            <Button handleClick={this.addToInput}>9</Button>
+
+            <Button handleClick={this.addToInput}>1</Button>
+            <Button handleClick={this.addToInput}>2</Button>
+            <Button handleClick={this.addToInput}>3</Button>
             <Button handleClick={this.addToInput}>x</Button>
           </div>
           <div className="row">
