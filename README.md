@@ -10,7 +10,7 @@ Calculator made in ReactJs covering all basic arithmetic operations.
 
 It is an assignment for SENG 513 Web Based System at the University of Calgary.
 
-### 🏠 [Homepage](https://github.com/ipieters/calc.git
+### 🏠 [Homepage](https://github.com/ipieters/calc.git)
 
 ### ✨ [Demo](https://ipieters.github.io/calc)
 
