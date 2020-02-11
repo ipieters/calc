@@ -15,29 +15,30 @@ class App extends Component {
 
   addToInput = val => {
     if (val === 'x') val = '*';
-    if (this.state.input === "ERROR") this.setState({ input: "" + val});
-    else {this.setState({ input: this.state.input + val });
-        }
+    if (this.state.input === "ERROR") this.setState({ input: "" + val });
+    else {
+      this.setState({ input: this.state.input + val });
+    }
   };
 
   handleEqual = () => {
-   try { 
-          var mathVar = math.evaluate(this.state.input);
-          if (!isNaN(mathVar))
-            this.setState({ input: mathVar });
-    console.log("the current input ultimate val is ["+mathVar+"]"); }
-   catch(err){
-     this.setState({ input: "ERROR" });
-   }
+    try {
+      var mathVar = math.evaluate(this.state.input);
+      if (!isNaN(mathVar) || math != "Infinity")
+        this.setState({ input: mathVar });
+    }
+    catch (err) {
+      this.setState({ input: "ERROR" });
+    }
   };
 
   backSpaceClear = () => {
-    if ((this.state.input === "ERROR") || (this.state.input === "Infinity")) this.setState({ input: ""});
+    if ((this.state.input === "ERROR") || (this.state.input === "Infinity")) this.setState({ input: "" });
     else this.setState({ input: this.state.input.slice(0, -1) })
   };
 
   clearAll = () => {
-    this.setState({ input: ""});
+    this.setState({ input: "" });
   };
 
   render() {
