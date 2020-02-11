@@ -38,8 +38,7 @@ npm start
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](Only problem when dividng by 0, it outputs &#34;Infinity&#34; instead of Undefined, but otherwise, cover most exception cases). 
-
+Contributions, issues and feature requests are welcome!<br />
 ## Show your support
 
 Give a ⭐️ if this project helped you!
