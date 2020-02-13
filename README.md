@@ -16,10 +16,11 @@ It is an assignment for SENG 513 Web Based System at the University of Calgary.
 
 ## Install
 
-```sh
-After cloning run the following commands on your console/terminal: npm install
+After cloning run the following commands on your console/terminal:
 
-This is to fix any missing node modules and dependencies
+```sh
+# This is to fix any missing node modules and dependencies
+npm install
 ```
 
 ## Usage
@@ -32,7 +33,7 @@ npm start
 
 👤 **Igor Pieters**
 
-* Website: https://github.com/ipiters
+* Website: https://github.com/ipieters
 * Github: [@ipieters](https://github.com/ipieters)
 * LinkedIn: [@ipieters](https://linkedin.com/in/ipieters)
 
